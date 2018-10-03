@@ -1,0 +1,101 @@
+html, body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+article > * {
+    min-width: 0;
+}
+
+
+article > p {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* article > .aside {
+    font-family: Lucida Grande;
+    margin: 30px 20px;
+    color: #666;
+    font-size: 0.8em;
+} */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* .line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+} */
+
+.top-image {
+    margin: 0;
+    height: 50px;
+    object-fit: contain;
+
+}
+
+/* figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+} */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+
+}
+
+article > * {
+    grid-column: 4;
+}
+/* article > figure {
+    display: grid;
+    grid-column: 1 / -1;
+    margin: 20px 0;
+} */
+
+article > blockquote {
+    grid-column: 3 / 5;
+    padding-left: 10px;
+    color: #666;
+    border-left: 3px solid black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* p {
+  line-height: 1.58em;
+  letter-spacing: -.003em;
+  font-size: 24px
+} */
