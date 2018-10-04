@@ -4,19 +4,12 @@ html, body {
 
 article {
     display: grid;
-    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
-    grid-row-start: auto;
-
+    grid-template-columns: 1fr 760px 1fr;
 }
 
-article > * {
-    min-width: 0;
-}
 
 
 article > p {
-    --x-height-multiplier: 0.375;
-    --baseline-multiplier: 0.17;
     letter-spacing: .01rem;
     font-weight: 400;
     font-style: normal;
@@ -26,29 +19,21 @@ article > p {
     color: rgba(0,0,0,.84);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    grid-column: 2;
 }
+
+
 
 img {
     width: 100%;
-}
-
-.top-image {
+    object-fit: cover;
     margin: 0;
-    height: 50px;
-    object-fit: contain;
-
-}
-
-
-article > * {
-    grid-column: 4;
-    position: relative;
-}
-/* article > figure {
-    display: grid;
+    height: 75vh;
     grid-column: 1 / -1;
     margin: 20px 0;
-} */
+
+}
+
 
 article > blockquote {
     grid-column: 3 / 5;
@@ -60,10 +45,5 @@ article > blockquote {
 h1 {
   text-align: center;
   font-size: 28px;
+  grid-column: 2;
 }
-
-/* p {
-  line-height: 1.58em;
-  letter-spacing: -.003em;
-  font-size: 24px
-} */
