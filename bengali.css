@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 article {
@@ -10,12 +10,11 @@ article {
 
 
 article > p {
-    letter-spacing: .01rem;
-    font-weight: 400;
+    letter-spacing: .05rem;
+    font-weight: 300;
     font-style: normal;
     font-size: 25px;
     line-height: 1.58;
-    letter-spacing: -.003em;
     color: rgba(0,0,0,.84);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -30,7 +29,7 @@ img {
     margin: 0;
     height: 75vh;
     grid-column: 1 / -1;
-    margin: 20px 0;
+
 
 }
 
@@ -46,4 +45,25 @@ h1 {
   text-align: center;
   font-size: 28px;
   grid-column: 2;
+}
+
+.chapter-nav {
+  display: flex;
+  margin: auto;
+  width: 760px;
+  padding: 10px;
+}
+
+.nav-name {
+  font-size: 25px;
+  color: #292a2b;
+  margin: auto;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #292a2b;
+	border-bottom: 25px solid transparent;
 }
