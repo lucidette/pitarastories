@@ -7,8 +7,6 @@ article {
     grid-template-columns: 1fr 760px 1fr;
 }
 
-
-
 article > p {
     letter-spacing: .05rem;
     font-weight: 300;
@@ -21,18 +19,13 @@ article > p {
     grid-column: 2;
 }
 
-
-
 img {
     width: 100%;
     object-fit: cover;
     margin: 0;
     height: 75vh;
     grid-column: 1 / -1;
-
-
 }
-
 
 article > blockquote {
     grid-column: 3 / 5;
@@ -45,6 +38,10 @@ h1 {
   text-align: center;
   font-size: 28px;
   grid-column: 2;
+}
+
+a {
+  text-decoration: none;
 }
 
 .chapter-nav {
@@ -65,5 +62,13 @@ h1 {
 	height: 0;
 	border-top: 25px solid transparent;
 	border-left: 50px solid #292a2b;
+	border-bottom: 25px solid transparent;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #292a2b;
 	border-bottom: 25px solid transparent;
 }
