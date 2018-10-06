@@ -2,6 +2,8 @@ html, body {
   font-family: 'Hind', sans-serif;
 }
 
+/* fix for mozilla https://stackoverflow.com/questions/22133580/google-fonts-dont-work-in-firefox*/
+
 article {
     display: grid;
     grid-template-columns: 1fr 760px 1fr;
@@ -9,15 +11,15 @@ article {
 
 article > p {
     letter-spacing: .05rem;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-size: 25px;
     line-height: 1.58;
     color: rgba(0,0,0,.84);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
     grid-column: 2;
+    margin-bottom:-.2em;
 }
+
 
 img {
     width: 100%;
