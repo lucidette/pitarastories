@@ -1,50 +1,93 @@
+@import url('https://fonts.maateen.me/bangla/font.css');
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
 html, body {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Bangla','Hind', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.fixed-header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: #00004e;
+  top: 0px;
+  justify-content: space-between;
 }
 
-/* fix for mozilla https://stackoverflow.com/questions/22133580/google-fonts-dont-work-in-firefox*/
+#header-img {
+	object-fit: contain;
+}
+#nav-bar {
+  height: 75px;
+	border: white;
+	display: flex;
+	align-items: center;
+}
+.nav-link {
+  color: white;
+}
 
 article {
     display: grid;
-    grid-template-columns: 1fr 760px 1fr;
+    grid-template-columns: 1fr 960px 1fr;
+    margin-top: 75px;
 }
 
 article > p {
     letter-spacing: .05rem;
     font-weight: 500;
     font-style: normal;
-    font-size: 25px;
-    line-height: 1.58;
+    font-size: 36px;
+    line-height: 1.65;
     color: rgba(0,0,0,.84);
     grid-column: 2;
     margin-bottom:-.2em;
 }
 
 
-img {
-    width: 100%;
-    object-fit: cover;
-    margin: 0;
-    height: 75vh;
-    grid-column: 1 / -1;
-}
-
-article > blockquote {
-    grid-column: 3 / 5;
-    padding-left: 10px;
-    color: #666;
-    border-left: 3px solid black;
-}
-
 h1 {
+  font-family: 'Hind';
   text-align: center;
-  font-size: 28px;
+  font-size: 56px;
+  font-weight: 300;
   grid-column: 2;
 }
 
 a {
   text-decoration: none;
 }
+.top-image {
+  grid-column: 1 / -1;
+}
+.top-image > img {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
+
+.in-line {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.in-line > img {
+  height: 50%;
+}
+.in-line > p {
+  letter-spacing: .05rem;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.65;
+  color: rgba(0,0,0,.84);
+  margin-bottom:-.2em;
+
+}
+
 
 .chapter-nav {
   display: flex;
