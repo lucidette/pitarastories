@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Forum|Raleway');
+
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+  box-sizing: border-box;
+}
+
+* > a {
+	text-decoration: none;
+	color: white;
+
+}
+#navbar {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(0,0,0, 0.0	);
+  position: fixed;
+  top: 20px;
+  justify-content: flex-end;
+
+}
+
+.nav-link {
+  color: white;
+	margin: 20px;
+}
+
+
+#welcome-section {
+	background-image: linear-gradient );
+
+  background: /*linear-gradient(to left, rgba(125, 81, 117, 0.5), rgba(103, 67, 101, 0.5), rgba(81, 53, 84, 0.5), rgba(61, 40, 67, 0.5), rgba(42, 27, 51, 0.5)),*/ url("assets/corner.jpeg");
+	background-size: cover;
+  height: 100vh;
+	width: 100%;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+  align-items: left;
+
+}
+
+/*#welcome-section > h1 {
+	color: #48657B;
+	text-align: left;
+	margin-left: 15%;
+	font-family: 'Forum', 'sans-serif';
+	font-size: 60px;
+	font-weight: 500px;
+	letter-spacing: 0.05em;
+}
+*/
+
+#welcome-section > h2 {
+	color: white;
+  margin-left: 22%;
+}
+
+#welcome-section > img {
+  height: 15%;
+  width: auto;
+  align-self: start;
+  margin-left: 22%;
+}
+
+#book-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 350px 350px;
+	grid-gap: 5px;
+	background-color: black;
+
+
+}
+
+.book-item {
+	position: relative;
+	text-align: center;
+}
+.book-item > img {
+	position: relative;
+	object-fit: cover;
+  width: 100%;
+ 	height: 100%;
+	-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+	opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.book-item:hover  > img {
+	-webkit-filter: none;
+	filter:none;
+
+}
+.book-item:hover > .item-name {
+	display:block;
+}
+
+.item-name {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+	line-height: 1.2em;
+	font-weight: 600;
+	color: white;
+}
+
+
+/*
+@media only screen and (max-width: 900px) {
+	#projects {
+		grid-template-columns: 45% 45%;
+	}
+} */
