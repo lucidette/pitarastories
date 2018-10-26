@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 html {
 	box-sizing: border-box;
@@ -17,7 +17,7 @@ html {
 body {
 	font-family: 16px;
 	line-height: 1.5;
-	font-family: 'Raleway';
+	font-family: 'Source Sans Pro';
 
 }
 
@@ -124,7 +124,7 @@ a {
 
 	.pf-sidebar > * {
 		padding: 10% 0;
-	}	
+	}
 
 	.pf-content {
 		flex: 60vw;
@@ -133,7 +133,7 @@ a {
 	.pf-grid  {
 		display: flex;
 		flex-direction: column;
-		justify-content: center; 
+		justify-content: center;
 
 	}
 
@@ -142,27 +142,3 @@ a {
 		margin-right: 1rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

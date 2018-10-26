@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Forum|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 
 *,
@@ -10,7 +10,7 @@
 }
 
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -63,10 +63,28 @@ html, body {
 	letter-spacing: 0.05em;
 }
 */
+h4 {
+	font-size: 180%;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	color: white;
+	font-variant: small-caps;
+	margin: 5%;
+
+
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+}
+
 
 #welcome-section > h2 {
 	color: white;
   margin-left: 22%;
+	font-weight: normal;
 }
 
 #welcome-section > img {
@@ -116,15 +134,25 @@ html, body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 28px;
-	line-height: 1.2em;
-	font-weight: 600;
-	color: white;
+
 }
 
 
-/*
 @media only screen and (max-width: 900px) {
-	#projects {
+	#welcome-section > h2 {
+		color: white;
+	  margin-left: 10%;
+		font-size: 15px;
+	}
+
+	#welcome-section > img {
+	  height: 10%;
+	  width: auto;
+	  align-self: start;
+	  margin-left: 10%;
+	}
+
+	#book-grid {
 		grid-template-columns: 45% 45%;
 	}
-} */
+}
