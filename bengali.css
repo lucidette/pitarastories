@@ -8,6 +8,7 @@ html, body {
   position: relative;
 }
 .fixed-header {
+  width: 100%;
   display: flex;
   position: fixed;
   width: 100%;
@@ -60,6 +61,11 @@ article > p {
     margin-bottom:-.2em;
 }
 
+article > img {
+  grid-column: 2;
+  display: block;
+  margin: auto;
+}
 
 h1 {
   font-family: 'Hind';
@@ -82,45 +88,26 @@ a {
 
 }
 
-.in-line {
-  grid-column: 2;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.in-line > img {
-  height: 50%;
-}
-.in-line > p {
-  letter-spacing: .05rem;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.65;
-  color: rgba(0,0,0,.84);
-  margin-bottom:-.2em;
-
-}
-
-
 .chapter-nav {
   display: flex;
   margin: auto;
-  width: 760px;
+  width: 60%;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .nav-name {
   font-size: 25px;
-  color: #292a2b;
+  color: #453943;
   margin: auto;
+  font-family: 'Hind';
 }
 
 .triangle-right {
 	width: 0;
 	height: 0;
 	border-top: 25px solid transparent;
-	border-left: 50px solid #292a2b;
+	border-left: 50px solid #453943;
 	border-bottom: 25px solid transparent;
 }
 
@@ -128,7 +115,7 @@ a {
 	width: 0;
 	height: 0;
 	border-top: 25px solid transparent;
-	border-right: 50px solid #292a2b;
+	border-right: 50px solid #453943;
 	border-bottom: 25px solid transparent;
 }
 

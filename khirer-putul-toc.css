@@ -39,7 +39,7 @@ a {
 }
 
 .pf-sidebar {
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("assets/cover_image.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("assets/shashthi_cover.jpg");
 	background-size: cover;
 	text-align: center;
 	padding: 5vw;
