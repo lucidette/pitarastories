@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.fixed-header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: #453943;
+  top: 0px;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 2px 2px 2px #2E2F2F;
+     -moz-box-shadow: 2px 2px 2px #2E2F2F;
+     -webkit-box-shadow: 2px 2px 2px #2E2F2F;
+}
+
+.logo-container {
+  width: 50%;
+}
+#header-img {
+	height: 50px;
+  object-fit: contain;
+  margin-left: 30px;
+
+}
+#nav-bar {
+  height: 65px;
+  width: 50%;
+	display: flex;
+  justify-content: flex-end;
+	align-items: center;
+}
+.nav-link {
+  color: #ed8320;
+  margin-right: 30px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-top: 65px;
+}
+
+article > p {
+    letter-spacing: .05rem;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.65;
+    color: rgba(0,0,0,.84);
+    grid-column: 2;
+    margin-bottom:-.2em;
+}
+
+article > img {
+  grid-column: 2;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+
+  text-align: center;
+  font-size: 56px;
+  font-weight: 300;
+  grid-column: 2;
+}
+
+a {
+  text-decoration: none;
+}
+.top-image {
+  grid-column: 1 / -1;
+  height: 300px;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("assets/about-texture.jpg");
+	background-size: cover;
+	padding: 5vw;
+
+}
+
+.top-image > h1 {
+	color: white;
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, .21);
+  vertical-align: middle;
+	font-size: 46px;
+}
+
+
+
+
+/* Small screens */
+@media only screen and (max-width: 900px) {
+article {
+  grid-template-columns: 10% 80% 10%;
+}
+article > p {
+  font-size: 24px;
+ }
+}
